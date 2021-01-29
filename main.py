@@ -1,4 +1,4 @@
-# UPDATE 1.2.1! Update codename: limit it 
+# UPDATE 1.3! Update codename: args version
 import sys
 from random import randrange
 # update 1.1 colorama +
@@ -6,8 +6,9 @@ import colorama
 from colorama import init
 init()
 from colorama import Fore, Back, Style
+import sys
 
-user_num = input(Back.GREEN + "Ограничьте подбор до целого числа, это число:")
+user_num = sys.argv[1]
 
 limit_int = 100000
 
@@ -29,7 +30,7 @@ def limit():
 
 limit()
 
-# creators: Dibusure, Open Source Present chat.
+# creators: Dibusure, Open Source Present chat. Gonate didn't want to, which is a pity ...
 # T
 #  H
 #	 A
