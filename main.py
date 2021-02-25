@@ -13,21 +13,40 @@ limit_int = 100000
 
 result = randrange(int(user_num))
 
-def limit():
+def main():
 	if result >= 100000:
 		Question = input("Число больше " + str(limit_int) + ", вы точно хотите его показать?(Да, Нет)")
-		if Question == 'Да' or 'да' or 'Yes' or 'y' or 'yes':
+	if Question.lower() == "да":
 			print(Back.BLUE + "Рандомное число:" + str(result) + ".")
 		
-		else:
+    elif Question.lower() == 'нет':
 			print("Принято, нажмите enter,и программа закроется.")
 			input("Press enter")
+
 	elif result <= 100000:
 		print(Back.BLUE + "Рандомное число:" + str(result) + ".")
-	else:
+	
+    else:
 		print(Back.RED + "Ошибка! Напишите это на странице проекта на github и добавьте скришот.")
 
-limit()
+main()
+
+while True:
+    newNum = input(Back.GREEN + "Хотите сгенерировать ещё число? ( Да, нет ): ")
+    if newNum.lower() == 'да':
+         main()
+         continue
+        
+
+    elif newNum.lower() == 'нет':
+         break
+
+
+print("Спасибо за использование!")
+
+
+
+
 
 # creators: Dibusure, Open Source Present chat.
 # T
