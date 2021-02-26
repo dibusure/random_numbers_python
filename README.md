@@ -13,6 +13,8 @@ python main.py
 у кого ^ не работает:
 python3 main.py
 Пользуйтесь!
+
+
 En:
 Usage:
 before using the script, you need to install the colorama module:
